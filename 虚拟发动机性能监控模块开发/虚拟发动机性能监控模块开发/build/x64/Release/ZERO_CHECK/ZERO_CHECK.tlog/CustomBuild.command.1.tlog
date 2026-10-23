@@ -1,0 +1,10 @@
+^F:\YUJINGGOU\V2.0\BUILD\CMAKEFILES\1FA7F303D2B7C40A792BAFCEF0502B60\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/yujinggou/v2.0 -BF:/yujinggou/v2.0/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file F:/yujinggou/v2.0/build/VirtualEngineMonitor.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
